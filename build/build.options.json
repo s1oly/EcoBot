@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "../../..,../..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "arduino:avr:mega:cpu=atmega2560",
+  "hardwareFolders": "/Users/s1oly/Library/Arduino15/packages",
+  "otherLibrariesFolders": "/Users/s1oly/Documents/Arduino/libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot"
+}
