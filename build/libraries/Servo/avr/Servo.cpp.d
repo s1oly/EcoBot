@@ -1,5 +1,5 @@
-/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp.o: \
- /Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp \
+/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/avr/Servo.cpp.o: \
+ /Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/Servo.cpp \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Arduino.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/binary.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/WCharacter.h \
@@ -11,10 +11,5 @@
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/USBAPI.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Arduino.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega/pins_arduino.h \
- /Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/Adafruit_MotorShield.h \
- /Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility/Adafruit_MS_PWMServoDriver.h \
- /Users/s1oly/Documents/Arduino/libraries/Adafruit_BusIO/Adafruit_I2CDevice.h \
- /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/Wire.h \
- /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Stream.h \
  /Users/s1oly/Documents/Arduino/libraries/Servo/src/Servo.h \
  /Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/ServoTimers.h
