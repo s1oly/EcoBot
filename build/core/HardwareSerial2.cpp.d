@@ -1,5 +1,5 @@
-/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp.o: \
- /Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp \
+/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/core/HardwareSerial2.cpp.o: \
+ /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial2.cpp \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Arduino.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/binary.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/WCharacter.h \
@@ -9,8 +9,6 @@
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Print.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Printable.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/USBAPI.h \
- /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Arduino.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega/pins_arduino.h \
- /Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library/AFMotor.h \
- /Users/s1oly/Documents/Arduino/libraries/Servo/src/Servo.h \
- /Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/ServoTimers.h
+ /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial_private.h \
+ /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/wiring_private.h

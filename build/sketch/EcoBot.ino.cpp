@@ -1,14 +1,17 @@
 #include <Arduino.h>
 #line 1 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-#include <Adafruit_MotorShield.h>
+#include <AFMotor.h>
 
 #include <Servo.h>
 
-#line 5 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+Servo myservo; 
+
+
+#line 8 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup();
-#line 10 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 13 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void loop();
-#line 5 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 8 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup()
 {
 	

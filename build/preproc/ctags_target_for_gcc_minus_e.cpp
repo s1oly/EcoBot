@@ -3,6 +3,9 @@
 
 # 4 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
 
+Servo myservo;
+
+
 void setup()
 {
 

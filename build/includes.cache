@@ -11,18 +11,8 @@
   },
   {
     "Sourcefile": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp",
-    "Include": "Adafruit_MotorShield.h",
-    "Includepath": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library"
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp",
-    "Include": "Adafruit_I2CDevice.h",
-    "Includepath": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_BusIO"
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp",
-    "Include": "Wire.h",
-    "Includepath": "/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src"
+    "Include": "AFMotor.h",
+    "Includepath": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library"
   },
   {
     "Sourcefile": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp",
@@ -35,42 +25,7 @@
     "Includepath": null
   },
   {
-    "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/Adafruit_MotorShield.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_V2_Library/utility/Adafruit_MS_PWMServoDriver.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_BusIO/Adafruit_BusIO_Register.cpp",
-    "Include": "SPI.h",
-    "Includepath": "/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src"
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_BusIO/Adafruit_BusIO_Register.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_BusIO/Adafruit_I2CDevice.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_BusIO/Adafruit_SPIDevice.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/Wire.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src/utility/twi.c",
+    "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library/AFMotor.cpp",
     "Include": "",
     "Includepath": null
   },
@@ -111,11 +66,6 @@
   },
   {
     "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/stm32f4/Servo.cpp",
-    "Include": "",
-    "Includepath": null
-  },
-  {
-    "Sourcefile": "/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SPI/src/SPI.cpp",
     "Include": "",
     "Includepath": null
   }
