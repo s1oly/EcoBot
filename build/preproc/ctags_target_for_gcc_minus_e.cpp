@@ -43,6 +43,22 @@ front_leftmotor.run(4);
 back_leftmotor.run(4);
 }
 
+void turnRight(int duration, int speed1, int speed2){
+  front_leftmotor.setSpeed(speed1);
+  back_leftmotor.setSpeed(speed1);
+  front_rightmotor.setSpeed(speed2);
+  back_rightmotor.setSpeed(speed2);
+  front_leftmotor.run(1);
+  back_leftmotor.run(1);
+  front_rightmotor.run(2);
+  back_rightmotor.run(2);
+  delay(duration);
+  front_rightmotor.run(4);
+  back_rightmotor.run(4);
+  front_leftmotor.run(4);
+  back_leftmotor.run(4);
+}
+
 void setup()
 {
 

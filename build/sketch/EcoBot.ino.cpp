@@ -18,8 +18,10 @@ void runServo(int position);
 #line 29 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void turnLeft(int duration, int speed1, int speed2);
 #line 45 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+void turnRight(int duration, int speed1, int speed2);
+#line 61 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup();
-#line 50 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 66 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void loop();
 #line 12 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runMotors(int speed){
@@ -53,6 +55,22 @@ front_rightmotor.run(RELEASE);
 back_rightmotor.run(RELEASE);
 front_leftmotor.run(RELEASE);
 back_leftmotor.run(RELEASE);
+}
+
+void turnRight(int duration, int speed1, int speed2){
+  front_leftmotor.setSpeed(speed1);
+  back_leftmotor.setSpeed(speed1);
+  front_rightmotor.setSpeed(speed2);
+  back_rightmotor.setSpeed(speed2);
+  front_leftmotor.run(FORWARD);
+  back_leftmotor.run(FORWARD);
+  front_rightmotor.run(BACKWARD);
+  back_rightmotor.run(BACKWARD);
+  delay(duration);
+  front_rightmotor.run(RELEASE);
+  back_rightmotor.run(RELEASE);
+  front_leftmotor.run(RELEASE);
+  back_leftmotor.run(RELEASE);
 }
 
 void setup()
