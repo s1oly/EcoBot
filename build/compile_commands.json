@@ -125,44 +125,11 @@
    "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
    "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
    "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
-   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/renesas/Servo.cpp",
+   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/Servo.cpp",
    "-o",
-   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/renesas/Servo.cpp.o"
+   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/avr/Servo.cpp.o"
   ],
-  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/renesas/Servo.cpp"
- },
- {
-  "directory": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot",
-  "arguments": [
-   "/Users/s1oly/Library/Arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega2560",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_MEGA2560",
-   "-DARDUINO_ARCH_AVR",
-   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
-   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega",
-   "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
-   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
-   "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
-   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/mbed/Servo.cpp",
-   "-o",
-   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/mbed/Servo.cpp.o"
-  ],
-  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/mbed/Servo.cpp"
+  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/Servo.cpp"
  },
  {
   "directory": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot",
@@ -224,44 +191,11 @@
    "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
    "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
    "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
-   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/sam/Servo.cpp",
+   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/stm32f4/Servo.cpp",
    "-o",
-   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/sam/Servo.cpp.o"
+   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/stm32f4/Servo.cpp.o"
   ],
-  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/sam/Servo.cpp"
- },
- {
-  "directory": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot",
-  "arguments": [
-   "/Users/s1oly/Library/Arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega2560",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_MEGA2560",
-   "-DARDUINO_ARCH_AVR",
-   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
-   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega",
-   "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
-   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
-   "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
-   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/samd/Servo.cpp",
-   "-o",
-   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/samd/Servo.cpp.o"
-  ],
-  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/samd/Servo.cpp"
+  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/stm32f4/Servo.cpp"
  },
  {
   "directory": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot",
@@ -323,11 +257,11 @@
    "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
    "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
    "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
-   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/stm32f4/Servo.cpp",
+   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/samd/Servo.cpp",
    "-o",
-   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/stm32f4/Servo.cpp.o"
+   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/samd/Servo.cpp.o"
   ],
-  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/stm32f4/Servo.cpp"
+  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/samd/Servo.cpp"
  },
  {
   "directory": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot",
@@ -356,10 +290,76 @@
    "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
    "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
    "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
-   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/Servo.cpp",
+   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/renesas/Servo.cpp",
    "-o",
-   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/avr/Servo.cpp.o"
+   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/renesas/Servo.cpp.o"
   ],
-  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/Servo.cpp"
+  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/renesas/Servo.cpp"
+ },
+ {
+  "directory": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot",
+  "arguments": [
+   "/Users/s1oly/Library/Arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega2560",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_MEGA2560",
+   "-DARDUINO_ARCH_AVR",
+   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
+   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega",
+   "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
+   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
+   "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
+   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/sam/Servo.cpp",
+   "-o",
+   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/sam/Servo.cpp.o"
+  ],
+  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/sam/Servo.cpp"
+ },
+ {
+  "directory": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot",
+  "arguments": [
+   "/Users/s1oly/Library/Arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega2560",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_MEGA2560",
+   "-DARDUINO_ARCH_AVR",
+   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
+   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega",
+   "-I/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library",
+   "-I/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src",
+   "-I/Users/s1oly/Documents/Arduino/libraries/Servo/src",
+   "/Users/s1oly/Documents/Arduino/libraries/Servo/src/mbed/Servo.cpp",
+   "-o",
+   "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/libraries/Servo/mbed/Servo.cpp.o"
+  ],
+  "file": "/Users/s1oly/Documents/Arduino/libraries/Servo/src/mbed/Servo.cpp"
  }
 ]

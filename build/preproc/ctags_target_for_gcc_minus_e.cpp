@@ -3,7 +3,9 @@
 # 3 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
 # 4 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
 
+SoftwareSerial bluetoothserial(9,10);
 
+char command;
 
 AF_DCMotor front_leftmotor(4);
 AF_DCMotor front_rightmotor(3);
@@ -75,15 +77,45 @@ void spinServos(){
   }
 }
 
+void Stop(){
+  front_leftmotor.setSpeed(0); //Define minimum velocity
+  front_leftmotor.run(4); //stop the motor when release the button
+  back_leftmotor.setSpeed(0); //Define minimum velocity
+  back_leftmotor.run(4); //rotate the motor clockwise
+  front_rightmotor.setSpeed(0); //Define minimum velocity
+  front_rightmotor.run(4); //stop the motor when release the button
+  back_rightmotor.setSpeed(0); //Define minimum velocity
+  back_rightmotor.run(4); //stop the motor when release the butto
+}
+
 void setup()
 {
  servo1.attach(10);
   servo2.attach(9);
+  bluetoothserial.begin(9600);
 }
 
 void loop()
 {
- spinServos();
-  turnLeft(10000,2000,2000);
-  turnRight(10000,2000,2000);
+
+  if(bluetoothserial.available() > 0){
+    command = bluetoothserial.read();
+  }
+
+  switch(command){
+    case 'F':
+      runMotors(100);
+      break;
+    case 'R':
+      turnRight(1000,100,150);
+      break;
+    case 'L':
+      turnLeft(1000,100,150);
+      break;
+    case 'S':
+      runServo(130,130);
+      break;
+  }
+
+
 }

@@ -4,7 +4,9 @@
 #include <SoftwareSerial.h>
 #include <Servo.h>
 
+SoftwareSerial bluetoothserial(9,10);
 
+char command;
 
 AF_DCMotor front_leftmotor(4);
 AF_DCMotor front_rightmotor(3);
@@ -15,21 +17,23 @@ Servo servo1;
 Servo servo2;
 
 
-#line 16 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 18 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runMotors(int speed);
-#line 28 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 30 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runServo(int position1, int position2);
-#line 34 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 36 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void turnLeft(int duration, int speed1, int speed2);
-#line 50 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 52 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void turnRight(int duration, int speed1, int speed2);
-#line 66 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 68 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void spinServos();
-#line 77 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 79 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+void Stop();
+#line 90 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup();
-#line 83 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 97 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void loop();
-#line 16 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 18 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runMotors(int speed){
   front_leftmotor.setSpeed(speed);
   front_rightmotor.setSpeed(speed);
@@ -91,16 +95,46 @@ void spinServos(){
   }
 }
 
+void Stop(){
+  front_leftmotor.setSpeed(0);  //Define minimum velocity
+  front_leftmotor.run(RELEASE); //stop the motor when release the button
+  back_leftmotor.setSpeed(0);  //Define minimum velocity
+  back_leftmotor.run(RELEASE); //rotate the motor clockwise
+  front_rightmotor.setSpeed(0);  //Define minimum velocity
+  front_rightmotor.run(RELEASE); //stop the motor when release the button
+  back_rightmotor.setSpeed(0);  //Define minimum velocity
+  back_rightmotor.run(RELEASE); //stop the motor when release the butto
+}
+
 void setup()
 {
 	servo1.attach(10);
   servo2.attach(9);
+  bluetoothserial.begin(9600);
 }
 
 void loop()
 {
-	spinServos();
-  turnLeft(10000,2000,2000);
-  turnRight(10000,2000,2000);
+	
+  if(bluetoothserial.available() > 0){
+    command = bluetoothserial.read();
+  }
+
+  switch(command){
+    case 'F':
+      runMotors(100);
+      break;
+    case 'R':
+      turnRight(1000,100,150);
+      break;
+    case 'L':
+      turnLeft(1000,100,150);
+      break;
+    case 'S':
+      runServo(130,130);
+      break;
+  }
+
+
 }
 
