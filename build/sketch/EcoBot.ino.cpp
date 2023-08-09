@@ -1,15 +1,15 @@
 #include <Arduino.h>
 #line 1 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 #include <AFMotor.h>
-
+#include <SoftwareSerial.h>
 #include <Servo.h>
 
 
 
-AF_DCMotor front_leftmotor(1);
-AF_DCMotor front_rightmotor(2);
-AF_DCMotor back_rightmotor(3);
-AF_DCMotor back_leftmotor(4);
+AF_DCMotor front_leftmotor(4);
+AF_DCMotor front_rightmotor(3);
+AF_DCMotor back_rightmotor(2);
+AF_DCMotor back_leftmotor(1);
 
 Servo servo1;
 Servo servo2;
@@ -36,8 +36,8 @@ void runMotors(int speed){
   back_rightmotor.setSpeed(speed);
   back_leftmotor.setSpeed(speed);
   
-  front_leftmotor.run(BACKWARD);
-  front_rightmotor.run(FORWARD);
+  front_leftmotor.run(FORWARD);
+  front_rightmotor.run(BACKWARD);
   back_rightmotor.run(FORWARD);
   back_leftmotor.run(BACKWARD);
 }
@@ -54,9 +54,9 @@ back_rightmotor.setSpeed(speed1);
 front_leftmotor.setSpeed(speed2);
 back_leftmotor.setSpeed(speed2);
 front_rightmotor.run(BACKWARD);
-back_rightmotor.run(BACKWARD);
+back_rightmotor.run(FORWARD);
 front_leftmotor.run(BACKWARD);
-back_leftmotor.run(BACKWARD);
+back_leftmotor.run(FORWARD);
 delay(duration);
 front_rightmotor.run(RELEASE);
 back_rightmotor.run(RELEASE);
@@ -70,8 +70,8 @@ void turnRight(int duration, int speed1, int speed2){
   front_rightmotor.setSpeed(speed2);
   back_rightmotor.setSpeed(speed2);
   front_leftmotor.run(FORWARD);
-  back_leftmotor.run(FORWARD);
-  front_rightmotor.run(BACKWARD);
+  back_leftmotor.run(BACKWARD);
+  front_rightmotor.run(FORWARD);
   back_rightmotor.run(BACKWARD);
   delay(duration);
   front_rightmotor.run(RELEASE);

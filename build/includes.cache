@@ -16,6 +16,11 @@
   },
   {
     "Sourcefile": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp",
+    "Include": "SoftwareSerial.h",
+    "Includepath": "/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src"
+  },
+  {
+    "Sourcefile": "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/build/sketch/EcoBot.ino.cpp",
     "Include": "Servo.h",
     "Includepath": "/Users/s1oly/Documents/Arduino/libraries/Servo/src"
   },
@@ -26,6 +31,11 @@
   },
   {
     "Sourcefile": "/Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library/AFMotor.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src/SoftwareSerial.cpp",
     "Include": "",
     "Includepath": null
   },

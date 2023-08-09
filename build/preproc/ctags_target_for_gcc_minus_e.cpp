@@ -1,14 +1,14 @@
 # 1 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 # 2 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
-
+# 3 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
 # 4 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
 
 
 
-AF_DCMotor front_leftmotor(1);
-AF_DCMotor front_rightmotor(2);
-AF_DCMotor back_rightmotor(3);
-AF_DCMotor back_leftmotor(4);
+AF_DCMotor front_leftmotor(4);
+AF_DCMotor front_rightmotor(3);
+AF_DCMotor back_rightmotor(2);
+AF_DCMotor back_leftmotor(1);
 
 Servo servo1;
 Servo servo2;
@@ -20,8 +20,8 @@ void runMotors(int speed){
   back_rightmotor.setSpeed(speed);
   back_leftmotor.setSpeed(speed);
 
-  front_leftmotor.run(2);
-  front_rightmotor.run(1);
+  front_leftmotor.run(1);
+  front_rightmotor.run(2);
   back_rightmotor.run(1);
   back_leftmotor.run(2);
 }
@@ -38,9 +38,9 @@ back_rightmotor.setSpeed(speed1);
 front_leftmotor.setSpeed(speed2);
 back_leftmotor.setSpeed(speed2);
 front_rightmotor.run(2);
-back_rightmotor.run(2);
+back_rightmotor.run(1);
 front_leftmotor.run(2);
-back_leftmotor.run(2);
+back_leftmotor.run(1);
 delay(duration);
 front_rightmotor.run(4);
 back_rightmotor.run(4);
@@ -54,8 +54,8 @@ void turnRight(int duration, int speed1, int speed2){
   front_rightmotor.setSpeed(speed2);
   back_rightmotor.setSpeed(speed2);
   front_leftmotor.run(1);
-  back_leftmotor.run(1);
-  front_rightmotor.run(2);
+  back_leftmotor.run(2);
+  front_rightmotor.run(1);
   back_rightmotor.run(2);
   delay(duration);
   front_rightmotor.run(4);
