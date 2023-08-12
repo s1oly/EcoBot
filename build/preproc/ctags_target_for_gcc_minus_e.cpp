@@ -34,7 +34,7 @@ void runServo(int position1, int position2){
   delay(15);
 }
 
-void turnLeft(int duration, int speed1, int speed2){
+void turnLeft(int speed1, int speed2){
 front_rightmotor.setSpeed(speed1);
 back_rightmotor.setSpeed(speed1);
 front_leftmotor.setSpeed(speed2);
@@ -43,14 +43,9 @@ front_rightmotor.run(2);
 back_rightmotor.run(1);
 front_leftmotor.run(2);
 back_leftmotor.run(1);
-delay(duration);
-front_rightmotor.run(4);
-back_rightmotor.run(4);
-front_leftmotor.run(4);
-back_leftmotor.run(4);
 }
 
-void turnRight(int duration, int speed1, int speed2){
+void turnRight(int speed1, int speed2){
   front_leftmotor.setSpeed(speed1);
   back_leftmotor.setSpeed(speed1);
   front_rightmotor.setSpeed(speed2);
@@ -59,11 +54,6 @@ void turnRight(int duration, int speed1, int speed2){
   back_leftmotor.run(2);
   front_rightmotor.run(1);
   back_rightmotor.run(2);
-  delay(duration);
-  front_rightmotor.run(4);
-  back_rightmotor.run(4);
-  front_leftmotor.run(4);
-  back_leftmotor.run(4);
 }
 
 void spinServos(){
@@ -107,10 +97,10 @@ void loop()
       runMotors(100);
       break;
     case 'R':
-      turnRight(1000,100,150);
+      turnRight(100,150);
       break;
     case 'L':
-      turnLeft(1000,100,150);
+      turnLeft(100,150);
       break;
     case 'S':
       runServo(130,130);

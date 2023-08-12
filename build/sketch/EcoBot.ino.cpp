@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #line 1 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#include <TinkerController.h>
 #include <AFMotor.h>
 #include <SoftwareSerial.h>
 #include <Servo.h>
@@ -17,23 +18,6 @@ Servo servo1;
 Servo servo2;
 
 
-#line 18 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void runMotors(int speed);
-#line 30 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void runServo(int position1, int position2);
-#line 36 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void turnLeft(int duration, int speed1, int speed2);
-#line 52 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void turnRight(int duration, int speed1, int speed2);
-#line 68 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void spinServos();
-#line 79 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void Stop();
-#line 90 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void setup();
-#line 97 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void loop();
-#line 18 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runMotors(int speed){
   front_leftmotor.setSpeed(speed);
   front_rightmotor.setSpeed(speed);
@@ -52,7 +36,7 @@ void runServo(int position1, int position2){
   delay(15);
 }
 
-void turnLeft(int duration, int speed1, int speed2){
+void turnLeft(int speed1, int speed2){
 front_rightmotor.setSpeed(speed1);
 back_rightmotor.setSpeed(speed1);
 front_leftmotor.setSpeed(speed2);
@@ -61,14 +45,9 @@ front_rightmotor.run(BACKWARD);
 back_rightmotor.run(FORWARD);
 front_leftmotor.run(BACKWARD);
 back_leftmotor.run(FORWARD);
-delay(duration);
-front_rightmotor.run(RELEASE);
-back_rightmotor.run(RELEASE);
-front_leftmotor.run(RELEASE);
-back_leftmotor.run(RELEASE);
 }
 
-void turnRight(int duration, int speed1, int speed2){
+void turnRight(int speed1, int speed2){
   front_leftmotor.setSpeed(speed1);
   back_leftmotor.setSpeed(speed1);
   front_rightmotor.setSpeed(speed2);
@@ -77,11 +56,6 @@ void turnRight(int duration, int speed1, int speed2){
   back_leftmotor.run(BACKWARD);
   front_rightmotor.run(FORWARD);
   back_rightmotor.run(BACKWARD);
-  delay(duration);
-  front_rightmotor.run(RELEASE);
-  back_rightmotor.run(RELEASE);
-  front_leftmotor.run(RELEASE);
-  back_leftmotor.run(RELEASE);
 }
 
 void spinServos(){
@@ -125,10 +99,10 @@ void loop()
       runMotors(100);
       break;
     case 'R':
-      turnRight(1000,100,150);
+      turnRight(100,150);
       break;
     case 'L':
-      turnLeft(1000,100,150);
+      turnLeft(100,150);
       break;
     case 'S':
       runServo(130,130);
