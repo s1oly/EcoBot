@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #line 1 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-
 #include <AFMotor.h>
 #include <SoftwareSerial.h>
 #include <Servo.h>
@@ -18,23 +17,23 @@ Servo servo1;
 Servo servo2;
 
 
-#line 19 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 18 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runMotors(int speed);
-#line 31 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 30 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runServo(int position1, int position2);
-#line 37 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 36 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void turnLeft(int speed1, int speed2);
-#line 48 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 47 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void turnRight(int speed1, int speed2);
-#line 59 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 58 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void spinServos();
-#line 70 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 69 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void Stop();
-#line 81 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 80 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup();
-#line 88 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 87 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void loop();
-#line 19 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 18 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void runMotors(int speed){
   front_leftmotor.setSpeed(speed);
   front_rightmotor.setSpeed(speed);
