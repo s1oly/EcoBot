@@ -13,6 +13,4 @@
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega/pins_arduino.h \
  /Users/s1oly/Documents/Arduino/libraries/Adafruit_Motor_Shield_library/AFMotor.h \
  /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/SoftwareSerial/src/SoftwareSerial.h \
- /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Stream.h \
- /Users/s1oly/Documents/Arduino/libraries/Servo/src/Servo.h \
- /Users/s1oly/Documents/Arduino/libraries/Servo/src/avr/ServoTimers.h
+ /Users/s1oly/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Stream.h
