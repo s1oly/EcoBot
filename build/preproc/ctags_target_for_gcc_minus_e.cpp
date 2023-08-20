@@ -143,7 +143,7 @@
 # 129 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
 # 130 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino" 2
 
-SoftwareSerial bluetoothSerial(16, 17); // RX, TX
+SoftwareSerial bluetoothSerial(19, 18); // RX, TX
 
 
 AF_DCMotor front_leftmotor(4);
@@ -156,6 +156,8 @@ char command;
 void setup()
 {
   bluetoothSerial.begin(9600); //Set the baud rate to your Bluetooth module.
+  Serial.begin(9600);
+  Serial.print(bluetoothSerial.available());
 }
 
 void loop() {

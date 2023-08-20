@@ -130,7 +130,7 @@
 #include <AFMotor.h>
 #include <SoftwareSerial.h>
 
-SoftwareSerial bluetoothSerial(16, 17); // RX, TX
+SoftwareSerial bluetoothSerial(19, 18); // RX, TX
 
 
 AF_DCMotor front_leftmotor(4);
@@ -142,22 +142,24 @@ char command;
 
 #line 141 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup();
-#line 146 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 148 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void loop();
-#line 169 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 171 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void forward();
-#line 181 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 183 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void back();
-#line 193 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 195 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void left();
-#line 205 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 207 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void right();
-#line 217 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 219 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void Stop();
 #line 141 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup()
 {
   bluetoothSerial.begin(9600);  //Set the baud rate to your Bluetooth module.
+  Serial.begin(9600);
+  Serial.print(bluetoothSerial.available());
 }
 
 void loop() {
