@@ -128,7 +128,7 @@
 #include <AFMotor.h>
 #include <SoftwareSerial.h>
 
-SoftwareSerial bluetoothSerial(16, 17); // RX, TX
+SoftwareSerial bluetoothSerial(19, 18); // RX, TX
 
 
 AF_DCMotor front_leftmotor(4);
@@ -141,6 +141,8 @@ char command;
 void setup()
 {
   bluetoothSerial.begin(9600);  //Set the baud rate to your Bluetooth module.
+  Serial.begin(9600);
+  Serial.print(bluetoothSerial.available());
 }
 
 void loop() {
