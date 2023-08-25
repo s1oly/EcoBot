@@ -142,18 +142,18 @@ char command;
 
 #line 141 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup();
-#line 148 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void loop();
-#line 171 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 149 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void forward();
-#line 183 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 161 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void back();
-#line 195 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 173 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void left();
-#line 207 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 185 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void right();
-#line 219 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+#line 197 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void Stop();
+#line 209 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
+void loop();
 #line 141 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup()
 {
@@ -162,28 +162,6 @@ void setup()
   Serial.print(bluetoothSerial.available());
 }
 
-void loop() {
-  if (bluetoothSerial.available() > 0) {
-    command = bluetoothSerial.read();
-
-    Stop(); //initialize with motors stoped
-    
-    switch (command) {
-      case 'F':
-        forward();
-        break;
-      case 'B':
-        back();
-        break;
-      case 'L':
-        left();
-        break;
-      case 'R':
-        right();
-        break;
-    }
-  }
-}
 
 void forward()
 {
@@ -243,4 +221,27 @@ void Stop()
   back_leftmotor.run(RELEASE); //stop the motor when release the button
   back_rightmotor.setSpeed(0);  //Define minimum velocity
   back_rightmotor.run(RELEASE); //stop the motor when release the button
+}
+
+void loop() {
+  if (bluetoothSerial.available() > 0) {
+    command = bluetoothSerial.read();
+
+    Stop(); //initialize with motors stoped
+    
+    switch (command) {
+      case 'F':
+        forward();
+        break;
+      case 'B':
+        back();
+        break;
+      case 'L':
+        left();
+        break;
+      case 'R':
+        right();
+        break;
+    }
+  }
 }

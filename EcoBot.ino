@@ -145,28 +145,6 @@ void setup()
   Serial.print(bluetoothSerial.available());
 }
 
-void loop() {
-  if (bluetoothSerial.available() > 0) {
-    command = bluetoothSerial.read();
-
-    Stop(); //initialize with motors stoped
-    
-    switch (command) {
-      case 'F':
-        forward();
-        break;
-      case 'B':
-        back();
-        break;
-      case 'L':
-        left();
-        break;
-      case 'R':
-        right();
-        break;
-    }
-  }
-}
 
 void forward()
 {
@@ -226,4 +204,27 @@ void Stop()
   back_leftmotor.run(RELEASE); //stop the motor when release the button
   back_rightmotor.setSpeed(0);  //Define minimum velocity
   back_rightmotor.run(RELEASE); //stop the motor when release the button
+}
+
+void loop() {
+  if (bluetoothSerial.available() > 0) {
+    command = bluetoothSerial.read();
+
+    Stop(); //initialize with motors stoped
+    
+    switch (command) {
+      case 'F':
+        forward();
+        break;
+      case 'B':
+        back();
+        break;
+      case 'L':
+        left();
+        break;
+      case 'R':
+        right();
+        break;
+    }
+  }
 }
