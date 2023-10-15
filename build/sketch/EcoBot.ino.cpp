@@ -129,6 +129,7 @@
 
 #include <AFMotor.h>
 #include <SoftwareSerial.h>
+#include <Servo
 
 SoftwareSerial bluetoothSerial(19, 18); // RX, TX
 
@@ -140,21 +141,6 @@ AF_DCMotor back_leftmotor(1);
 
 
 
-#line 141 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void setup();
-#line 149 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void forward();
-#line 161 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void back();
-#line 173 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void left();
-#line 185 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void right();
-#line 197 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void Stop();
-#line 209 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
-void loop();
-#line 141 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup()
 {
   bluetoothSerial.begin(9600);  //Set the baud rate to your Bluetooth module.

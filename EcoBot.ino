@@ -128,8 +128,10 @@
 #include <AFMotor.h>
 #include <SoftwareSerial.h>
 
+
 SoftwareSerial bluetoothSerial(19, 18); // RX, TX
 
+char command;
 
 AF_DCMotor front_leftmotor(4);
 AF_DCMotor front_rightmotor(3);
@@ -207,6 +209,25 @@ void Stop()
 }
 
 void loop() {
+if (bluetoothSerial.available() > 0) {
+    command = bluetoothSerial.read();
 
+    Stop(); //initialize with motors stoped
+    
+    switch (command) {
+      case 'F':
+        forward();
+        break;
+      case 'B':
+        back();
+        break;
+      case 'L':
+        left();
+        break;
+      case 'R':
+        right();
+        break;
+    }
+  }
 
 }
