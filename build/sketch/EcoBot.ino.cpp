@@ -138,7 +138,7 @@ AF_DCMotor front_rightmotor(3);
 AF_DCMotor back_rightmotor(2);
 AF_DCMotor back_leftmotor(1);
 
-char command;
+
 
 #line 141 "/Users/s1oly/Documents/GitHub/EcoBot/EcoBot/EcoBot.ino"
 void setup();
@@ -224,24 +224,6 @@ void Stop()
 }
 
 void loop() {
-  if (bluetoothSerial.available() > 0) {
-    command = bluetoothSerial.read();
 
-    Stop(); //initialize with motors stoped
-    
-    switch (command) {
-      case 'F':
-        forward();
-        break;
-      case 'B':
-        back();
-        break;
-      case 'L':
-        left();
-        break;
-      case 'R':
-        right();
-        break;
-    }
-  }
+
 }
